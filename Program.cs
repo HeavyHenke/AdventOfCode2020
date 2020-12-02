@@ -5,7 +5,6 @@ using System.Linq.Expressions;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Text;
-using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace AdventOfCode2020
@@ -15,7 +14,7 @@ namespace AdventOfCode2020
         static void Main()
         {
             DateTime start = DateTime.Now;
-            string result = new Day1().CalcB();
+            string result = new Day2().CalcB().ToString();
             DateTime stop = DateTime.Now;
 
             Console.WriteLine("It took " + (stop - start).TotalSeconds);
