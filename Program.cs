@@ -14,7 +14,7 @@ namespace AdventOfCode2020
         static void Main()
         {
             DateTime start = DateTime.Now;
-            string result = new Day2().CalcB().ToString();
+            string result = new Day3().CalcB().ToString();
             DateTime stop = DateTime.Now;
 
             Console.WriteLine("It took " + (stop - start).TotalSeconds);
