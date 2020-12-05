@@ -5,7 +5,6 @@ using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
-using MoreLinq;
 
 namespace AdventOfCode2020
 {
@@ -14,7 +13,7 @@ namespace AdventOfCode2020
         static void Main()
         {
             DateTime start = DateTime.Now;
-            string result = new Day4().CalcB().ToString();
+            string result = new Day5().CalcB().ToString();
             DateTime stop = DateTime.Now;
 
             Console.WriteLine("It took " + (stop - start).TotalSeconds);
