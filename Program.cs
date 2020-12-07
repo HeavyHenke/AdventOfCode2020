@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.Diagnostics;
 using System.Linq.Expressions;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
@@ -12,27 +13,28 @@ namespace AdventOfCode2020
     {
         static void Main()
         {
-            DateTime start = DateTime.Now;
-            string result = new Day7().CalcA().ToString();
-            DateTime stop = DateTime.Now;
+            var sw = new Stopwatch();
+            sw.Start();
+            string result = new Day8().CalcA().ToString();
+            sw.Stop();
 
-            Console.WriteLine("It took " + (stop - start).TotalSeconds);
+            Console.WriteLine("It took " + sw.Elapsed);
 
             WindowsClipboard.SetText(result);
             Console.WriteLine(result);
         }
     }
 
-    internal class Day7
+    internal class Day8
     {
-        public string CalcA()
+        public int CalcA()
         {
-            return "not impl.";
+            return -1;
         }
 
-        public string CalcB()
+        public int CalcB()
         {
-            return "not impl.";
+            return -1;
         }
 
     }
