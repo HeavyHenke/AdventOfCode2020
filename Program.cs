@@ -16,7 +16,7 @@ namespace AdventOfCode2020
         {
             var sw = new Stopwatch();
             sw.Start();
-            string result = new Day10().CalcB().ToString();
+            string result = new Day11().CalcA().ToString();
             sw.Stop();
 
             Console.WriteLine("It took " + sw.Elapsed);
@@ -26,17 +26,17 @@ namespace AdventOfCode2020
         }
     }
 
-    internal class Day10
+    internal class Day11
     {
         public int CalcA()
         {
-            throw new Exception("not found");
+            return 0;
         }
 
         public int CalcB()
         {
-            throw new Exception("not found");
+            return 0;
         }
-
     }
 }
+ 
