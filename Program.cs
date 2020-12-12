@@ -16,7 +16,7 @@ namespace AdventOfCode2020
         {
             var sw = new Stopwatch();
             sw.Start();
-            string result = new Day11().CalcA().ToString();
+            string result = new Day12().CalcB().ToString();
             sw.Stop();
 
             Console.WriteLine("It took " + sw.Elapsed);
@@ -26,17 +26,16 @@ namespace AdventOfCode2020
         }
     }
 
-    internal class Day11
+    internal class Day12
     {
         public int CalcA()
         {
-            return 0;
+            return -1;
         }
-
         public int CalcB()
         {
-            return 0;
+            return -1;
         }
+
     }
 }
- 
