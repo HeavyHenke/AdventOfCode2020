@@ -2,7 +2,7 @@
 
 namespace AdventOfCode2020
 {
-    internal class Day3
+    internal class Day03
     {
         public int CalcA()
         {

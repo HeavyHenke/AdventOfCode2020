@@ -6,7 +6,7 @@ using System.Text.RegularExpressions;
 
 namespace AdventOfCode2020
 {
-    internal class Day4
+    internal class Day04
     {
         public int CalcA()
         {

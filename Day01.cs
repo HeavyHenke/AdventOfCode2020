@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace AdventOfCode2020
 {
-    internal class Day1
+    internal class Day01
     {
         public string CalcA()
         {

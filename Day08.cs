@@ -5,7 +5,7 @@ using System.Text.RegularExpressions;
 
 namespace AdventOfCode2020
 {
-    internal class Day8
+    internal class Day08
     {
         private int _acc;
         private int _ip;

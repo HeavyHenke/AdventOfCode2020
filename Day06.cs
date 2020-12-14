@@ -3,7 +3,7 @@ using System.IO;
 
 namespace AdventOfCode2020
 {
-    internal class Day6
+    internal class Day06
     {
         public int CalcA()
         {
