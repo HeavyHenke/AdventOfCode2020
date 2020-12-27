@@ -20,7 +20,7 @@ namespace AdventOfCode2020
         {
             var sw = new Stopwatch();
             sw.Start();
-            string result = new Day20().CalcB().ToString();
+            string result = new Day21().CalcB().ToString();
             sw.Stop();
 
             Console.WriteLine("It took " + sw.Elapsed);
@@ -82,6 +82,44 @@ namespace AdventOfCode2020
 
         public long CalcB()
         {
+            var totalSides = new Dictionary<string, List<int>>();
+            var tiles = new Dictionary<int, List<string>>();
+
+            var lines = File.ReadAllLines("Day20.txt");
+            for (int i = 0; i < lines.Length; i++)
+            {
+                int tileId = int.Parse(lines[i].Substring(5, lines[i].Length - 5 - 1));
+                var left = new char[10];
+                var right = new char[10];
+                i++;
+                var firstRow = lines[i];
+                for (int row = 0; row < 10; row++)
+                {
+                    left[row] = lines[i][0];
+                    right[row] = lines[i][9];
+                    i++;
+                }
+
+                var sides = new List<string>
+                {
+                    new string(left), new string(right), firstRow, lines[i-1]
+                };
+
+                tiles.Add(tileId, sides);
+                foreach (var side in sides)
+                {
+                    if (totalSides.ContainsKey(side))
+                        totalSides[side].Add(tileId);
+                    else
+                        totalSides.Add(side, new List<int> { tileId });
+                    var side2 = new string(side.Reverse().ToArray());
+                    if (totalSides.ContainsKey(side2))
+                        totalSides[side2].Add(tileId);
+                    else
+                        totalSides.Add(side2, new List<int> { tileId });
+                }
+            }
+
             return -1;
         }
     }
