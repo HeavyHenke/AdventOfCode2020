@@ -1,14 +1,18 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Data;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Net;
+using System.Numerics;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Text.Json;
+using System.Threading;
 using System.Threading.Tasks;
 using MoreLinq;
 
@@ -20,7 +24,7 @@ namespace AdventOfCode2020
         {
             var sw = new Stopwatch();
             sw.Start();
-            string result = new Day21().CalcB().ToString();
+            string result = new Day22().CalcB().ToString();
             sw.Stop();
 
             Console.WriteLine("It took " + sw.Elapsed);
