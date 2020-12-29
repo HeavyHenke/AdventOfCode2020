@@ -24,7 +24,7 @@ namespace AdventOfCode2020
         {
             var sw = new Stopwatch();
             sw.Start();
-            string result = new Day22().CalcB().ToString();
+            string result = new Day23().CalcB().ToString();
             sw.Stop();
 
             Console.WriteLine("It took " + sw.Elapsed);
